@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scroll {
+  scrollbar-width: none;
+  /* Pour Firefox */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+  /* Pour Chrome, Safari et Edge */
+}
+
+.code_button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 2px;
+  isolation: isolate;
+}
+
+.code_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1700%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.code_button:hover::before {
+  transform: scale(1.2);
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.code_button span {
+  position: relative;
+  display: block;
+  padding: 7px;
+  font-size: 1.4rem;
+  background: #000814;
+  border-radius: 3px;
+  height: 100%;
+  margin: auto;
+}
+
+.tab {
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  justify-content: space-between;
+  /* Durée de transition pour le survol */
+  color: #adb5bd;
+  /* Couleur du texte */
+  display: block;
+  /* Assure que le lien prend toute la largeur pour faciliter le clic */
+  position: relative;
+}
+
+.tab:hover {
+  color: #FFF;
+  /* Couleur au survol */
+  transform: translateX(15%) scale(1.2);
+  /* Décalage vers l'avant (droite) */
+}
+
+.tab:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  bottom: 45%;
+  left: 0;
+  transform: translateY(50%);
+  background-color: #adb5bd;
+  margin-right: 50px;
+}
+
+.tab:hover:after {
+  background-color: #FFF;
+}
+
+.social-icons {
+  display: flex; /* Aligne les icônes horizontalement */
+  gap: 30px; /* Espacement entre les icônes */
+  
+}
+
+.social-icon {
+  color: #14AE5C; /* Couleur par défaut des icônes */
+  font-size: 24px; /* Taille des icônes */
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover {
+  transform: translateX(15%) scale(1.2);
+}
+
+.photo {
+  width: 200px; /* Ajustez la taille selon vos besoins */
+  height: 200px; /* Doit être égal à la largeur pour un cercle parfait */
+  border-radius: 50%; /* Cela rend l'image ronde */
+  object-fit: cover; /* Cela permet de garder les proportions de l'image */
+  /* Ajouter une ombre si désiré */
+  box-shadow: 0 4px 8px rgba(5, 186, 241, 0.2);
+}
+
+.submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 600;
+  width: auto;
+  background: #000814;
+  border: 1px solid #07acf8;
+  padding: 10px 14px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  border-color: #14AE5C;
+  box-shadow: 0px 0px 8px 4px rgba(8, 235, 252, 0.2), 
+  0px 0px 15px rgba(0, 8, 20, 0.4);
+  transform: scale(1.1);
+}
