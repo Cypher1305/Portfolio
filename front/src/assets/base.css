@@ -157,6 +157,7 @@
 
 body, * {
   cursor: none; /* Cache le curseur par défaut */
+  background-color: #000814;
 }
 
 .custom-cursor {

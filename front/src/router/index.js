@@ -5,6 +5,7 @@ import LandingPage from '../components/LandingPage.vue';
 import ArchivePage from '../components/ArchivePage.vue';
 import DesignPage from '../components/DesignPage.vue';
 import Message from '@/components/Message.vue';
+import OopsPage from '@/components/OopsPage.vue';
 
 const routes = [
   {
@@ -26,7 +27,12 @@ const routes = [
     path: '/Message',
     name: 'Message',
     component: Message,
-  }
+  },
+  {
+    path: '/OopsPage',
+    name: 'OopsPage',
+    component: OopsPage,
+  },
 ];
 
 const router = createRouter({
