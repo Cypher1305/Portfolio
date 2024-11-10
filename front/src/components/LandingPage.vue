@@ -234,7 +234,7 @@
 
                 <div id="app">
                     <router-link to="/DesignPage"
-                        class="flex flex-col items-center mt-24 text-Fwhite hover:text-gray-300" target='_blank'>
+                        class="flex flex-col items-center mt-24 text-white" target='_blank'>
                         <i class="fas fa-palette mx-auto"></i>
                         <span class="text-xs text-gray">Plus? cliquez ici !</span>
                     </router-link>

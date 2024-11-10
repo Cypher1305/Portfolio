@@ -19,7 +19,6 @@
 .code_button {
   display: block;
   width: 100%;
-  cursor: pointer;
   color: white;
   margin: 0 auto;
   position: relative;
@@ -72,14 +71,10 @@
 
 .tab {
   padding: 5px 20px;
-  cursor: pointer;
   transition: all 0.5s ease;
   justify-content: space-between;
-  /* Durée de transition pour le survol */
   color: #adb5bd;
-  /* Couleur du texte */
   display: block;
-  /* Assure que le lien prend toute la largeur pour faciliter le clic */
   position: relative;
 }
 
@@ -146,7 +141,6 @@
   padding: 3px 7px;
   font-size: inherit;
   margin-top: 8px;
-  cursor: pointer;
   border-radius: 6px;
   transition: all 0.5s ease;
 }
@@ -157,4 +151,24 @@
   box-shadow: 0px 0px 8px 4px rgba(8, 235, 252, 0.2), 
   0px 0px 15px rgba(0, 8, 20, 0.4);
   transform: scale(1.1);
+}
+
+
+
+body, * {
+  cursor: none; /* Cache le curseur par défaut */
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 10px; /* Taille du curseur par défaut */
+  height: 10px;
+  border: 1px solid #62ebeb; /* Contours du curseur */
+  border-radius: 50%;
+  background-color: transparent; /* Sans fond */
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(20, 174, 92, 0.5); /* Lueur externe */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.3s, height 0.3s, box-shadow 0.3s ease; /* Animation douce */
+  z-index: 1000;
 }
