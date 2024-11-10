@@ -1,18 +1,21 @@
 <template>
     <div class="flex flex-col bg-custom-black h-screen text-custom-green items-center justify-center custom-scroll">
         <div class="form-container">
-            <form class="form">
+            <form class="form" @submit.prevent="submitForm">
                 <div class="form-group">
                     <label for="email">Votre email</label>
-                    <input type="text" id="email" name="email" required="">
+                    <input type="text" id="email" name="email" required="" v-model="email">
                 </div>
                 <div class="form-group">
                     <label for="textarea">Comment puis-je vous aider?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="" v-model="message">          </textarea>
                 </div>
                 <button class="form-submit-btn" type="submit">Envoyer</button>
             </form>
         </div>
+        <!-- Popup confirmation message -->
+        <div v-if="isSubmitted" class="popup">Message envoyé avec succès !</div>
+
         <div @click="navigateTo('/')" class="mt-5 ml-2 text-md text-gray cursor-pointer">⟵ Retour</div>
 
     </div>
@@ -20,6 +23,7 @@
 
 <script>
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
 
 export default {
     name: 'Message',
@@ -28,14 +32,60 @@ export default {
         const navigateTo = (route) => {
             router.push(route);
         };
+
+        // Variables pour les champs du formulaire
+        const email = ref('');
+        const message = ref('');
+        const isSubmitted = ref(false);
+
+        // Fonction pour soumettre le formulaire
+        const submitForm = async () => {
+            try {
+                // Envoi de l'email et du message à un serveur
+                const response = await fetch('http://localhost:3000/send', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        email: email.value,
+                        message: message.value,
+                    }),
+                });
+
+                if (response.ok) {
+                    isSubmitted.value = true; // Affiche le popup
+                    setTimeout(() => {
+                        isSubmitted.value = false; // Masque le popup après 3 secondes
+                    }, 3000);
+                } else {
+                    console.error('Erreur lors de l’envoi du message.');
+                }
+            } catch (error) {
+                console.error('Erreur réseau:', error);
+            }
+        };
+
+
+
         return {
-            navigateTo,
+            navigateTo, 
+            email, 
+            message, 
+            submitForm, 
+            isSubmitted
         };
     }
 };
 </script>
 
 <style scoped>
+
+.popup {
+    color: #14AE5C;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
 
 .form-container {
     width: 400px;
