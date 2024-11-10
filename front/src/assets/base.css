@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Masquer la barre de défilement */
 .custom-scroll {
-  scrollbar-width: none;
-  /* Pour Firefox */
+  scrollbar-width: none; /* Pour Firefox */
+  overflow: auto;
 }
 
+/* Masquer la barre de défilement sur Chrome, Safari et Edge */
 .custom-scroll::-webkit-scrollbar {
   display: none;
-  /* Pour Chrome, Safari et Edge */
 }
+
+
 
 .code_button {
   display: block;
@@ -139,9 +143,8 @@
   width: auto;
   background: #000814;
   border: 1px solid #07acf8;
-  padding: 10px 14px;
+  padding: 3px 7px;
   font-size: inherit;
-  gap: 8px;
   margin-top: 8px;
   cursor: pointer;
   border-radius: 6px;

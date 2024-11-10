@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen bg-custom-black text-custom-green">
+    <div class="flex flex-col lg:flex-row h-full bg-custom-black text-custom-green custom-scroll">
         <!-- Typing text container, affiché jusqu'à la fin de l'animation -->
         <div v-show="!isVisible" ref="container"
             class="flex items-center justify-center w-full h-screen text-xl font-mono fade-out">
@@ -8,18 +8,18 @@
         </div>
 
         <!-- Contenu principal, affiché après l'animation -->
-        <div v-if="isVisible" class="w-full text-xl font-inter">
+        <div v-if="isVisible" class="flex flex-col lg:flex-row w-full text-xl font-inter">
             <header
-                class="w-[38%] h-screen fixed bg-custom-black border-r border-blue p-1 font-inter flex flex-col items-center justify-center">
+                class="w-full lg:w-[38%] lg:h-screen lg:fixed bg-custom-black border-r border-blue p-1 font-inter flex flex-col items-center justify-center">
                 <img :src="profileImage" alt="Photo" class="rounded-full w-40 h-30 mt-1 photo" />
                 <div class="w-[80%] mx-auto flex flex-col ">
                     <h1 class="text-3xl text-white font-inter font-bold mt-1 text-left">YAO Kossia Bénédicte</h1>
                     <h4 class="text-2xl text-white font-inter text-left">Développeur Full Stack</h4>
                     <p class="text-base text-gray font-inter mb-2 text-center text-justify">
-                        Je conçois des sites et des applications web/mobiles, tout en développant des projets
+                        Je conçois des sites, des applications web/mobiles, et développe des projets
                         innovants visant à apporter des solutions concrètes aux défis actuels.
                     </p>
-                    <a class=" code_button text-center"><span>Message</span></a>
+                    <div @click="navigateTo('/Message')" class=" code_button text-center"><span>Message</span></div>
 
                     <!-- Navigation -->
                     <nav class="mt-2 font-inter">
@@ -55,7 +55,7 @@
             </header>
 
 
-            <section class="ml-[40%] mx-auto p-8 overflow-y-auto h-screen custom-scroll text-white flex flex-col">
+            <section class="lg:ml-[40%] mx-auto p-8 text-white flex flex-col custom-scroll scrollbar-hidden">
                 <div id="about">
                     <h2 class="text-2xl mb-2">À PROPOS</h2>
                     <p class="mt-5 text-justify text-base text-gray">Créative, autodidacte et dotée d’un excellent
@@ -74,12 +74,12 @@
 
                     <!-- Expérience 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[90px]">2023-2024</p>
+                        <p class="experience-date text-base w-[150px]">2023-2024</p>
                         <div class="experience-details ml-6 flex flex-col">
                             <h1 class="text-lg font-semibold">Développeur Full Stack JS · KY’s CONSULTING</h1>
                             <p class="text-base text-gray text-justify">
-                                Développement d'applications web dynamiques pour gérer et optimiser les processus
-                                internes des PME.
+                                Développement d'applications web dynamiques pour la gestion et le developpement des
+                                réseaux professionnel pour les petites entreprises.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
                                 <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
@@ -87,13 +87,14 @@
                                 <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-aws"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Expérience 2 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[90px]">2022-2023</p>
+                        <p class="experience-date text-base w-[100px]">2022-2023</p>
                         <div class="experience-details ml-6 flex flex-col">
                             <h1 class="text-lg font-semibold">Designer UI/UX · Freelance</h1>
                             <p class="text-base text-gray text-justify">
@@ -102,7 +103,7 @@
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
                                 <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-adobe"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
                             </div>
@@ -111,35 +112,39 @@
 
                     <!-- Expérience 3 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[85px]">2021-2022</p>
+                        <p class="experience-date text-base w-[100px]">2021-2022</p>
                         <div class="experience-details ml-6 flex flex-col">
-                            <h1 class="text-lg font-semibold">Développeur Back-End · Start-up Innov</h1>
+                            <h1 class="text-lg font-semibold">Développeur Front-End · Mplaces Africa</h1>
                             <p class="text-base text-gray text-justify">
-                                Conception et optimisation de l'architecture back-end pour des applications SaaS.
+                                Implémentation des designs à partir des maquettes et teste avant mise en production des
+                                projets.
                             </p>
-                            <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-python"></i></a>
+                            <div class="stack mt-2 flex flex-wrap gap-3 mb-5">
+                                <a href="#" class="tech-icon"><i class="fab fa-symfony"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-docker"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-linux"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-aws"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
                             </div>
                         </div>
                     </div>
                     <a href="/CV_YAO_Kossia_Benedicte.pdf" target="_blank"
-                        class="mt-5 ml-2 text-lg font-semibold text-gray">➤ Voir le CV complet</a>
+                        class="mt-5 ml-2 text-lg font-semibold text-gray">➤ Voir mon CV complet</a>
                 </div>
 
                 <div id="projets" class="mt-12">
                     <h2 class="text-2xl mb-2">PROJETS</h2>
 
                     <!-- Projet 1 -->
-                    <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[90px]">2023-2024</p>
+                    <div class="experience-item flex flex-row mt-5 text-custom-green font-inter gap-6">
+                        <div class="project-thumbnail w-32 h-32 mb-4 mt-5">
+                            <img src="/bugster.png" alt="Miniature du projet"
+                                class="object-fit w-full h-full rounded-lg">
+                        </div>
                         <div class="experience-details ml-6 flex flex-col">
-                            <h1 class="text-lg font-semibold">BUSTER</h1>
+                            <h1 class="text-lg font-semibold">BUSTER · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
-                                Développement d'applications web dynamiques pour gérer et optimiser les processus
-                                internes des PME.
+                                Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                                algorithmes.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
                                 <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
@@ -148,44 +153,44 @@
                                 <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
                                 <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Projet 2 -->
-                    <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[90px]">2022-2023</p>
-                        <div class="experience-details ml-6 flex flex-col">
-                            <h1 class="text-lg font-semibold">Designer UI/UX · Freelance</h1>
-                            <p class="text-base text-gray text-justify">
-                                Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web
-                                et mobiles.
-                            </p>
-                            <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-adobe"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                            <div class="project-links flex gap-4">
+                                <a href="#" target="_blank" class="submit-btn">➤ Télécharger</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Projet 3 -->
+                    <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <p class="experience-date text-base w-[85px]">2021-2022</p>
+                        <div class="project-thumbnail w-32 h-32 mb-4 mt-4 ">
+                            <img src="/b.png" alt="Miniature du projet" class="object-fit w-auto h-auto rounded-lg">
+                        </div>
                         <div class="experience-details ml-6 flex flex-col">
-                            <h1 class="text-lg font-semibold">Développeur Back-End · Start-up Innov</h1>
+                            <h1 class="text-lg font-semibold">PROXIMATE · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
-                                Conception et optimisation de l'architecture back-end pour des applications SaaS.
+                                Développement d'applications web dynamiques pour la gestion des contacts.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-python"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-docker"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-linux"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-aws"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-react"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
+                                <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
+                            </div>
+                            <div class="project-links flex gap-4">
+                                <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
+                                <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code
+                                    source</a>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="mt-5 ml-2 text-lg font-semibold text-gray">➤ Voir les archives de projets</a>
+
+                    
+
+
+
+
+                    <a href="/ArchivePage" target="_blank" class="mt-9 ml-2 text-lg font-semibold text-gray">➤ Voir tous
+                        mes projets</a>
                 </div>
 
                 <div id="projets" class="mt-12">
@@ -193,17 +198,16 @@
 
                     <div class="mb-4">
                         <div class="flex justify-between">
-                            <span class="font-bold">JavaScript</span>
+                            <span class="font-bold">Développement Web/Mobile</span>
                             <span>90%</span>
                         </div>
                         <div class="bg-gray-700 rounded-full h-2">
                             <div class="bg-green-500 h-2 rounded-full" style="width: 90%;"></div>
                         </div>
                     </div>
-
                     <div class="mb-4">
                         <div class="flex justify-between">
-                            <span class="font-bold">React</span>
+                            <span class="font-bold">Communication Digitale</span>
                             <span>85%</span>
                         </div>
                         <div class="bg-gray-700 rounded-full h-2">
@@ -213,7 +217,7 @@
 
                     <div class="mb-4">
                         <div class="flex justify-between">
-                            <span class="font-bold">Node.js</span>
+                            <span class="font-bold">Gestion de Projet</span>
                             <span>80%</span>
                         </div>
                         <div class="bg-gray-700 rounded-full h-2">
@@ -222,24 +226,17 @@
                     </div>
                 </div>
 
-                <p class="mt-24 ml-9 text-justify text-xs text-gray">Cookie marshmallow brownie cheesecake tiramisu.
-                    Lollipop
-                    chocolate cake
-                    sweet roll jujubes sesame snaps.Cookie marshmallow brownie cheesecake tiramisu. Lollipop chocolate
-                    cake
-                    sweet roll jujubes sesame snaps.Cookie marshmallow brownie cheesecake tiramisu. Lollipop chocolate
-                    cake
-                    sweet roll jujubes sesame snaps.Cookie marshmallow brownie cheesecake tiramisu. Lollipop chocolate
-                    cake
-                    sweet roll jujubes sesame snaps.Cookie marshmallow brownie cheesecake tiramisu. Lollipop chocolate
-                    cake
-                    sweet roll jujubes sesame snaps.</p>
+                <p class="mt-24 ml-9 text-justify text-xs text-gray">Inspirée du protfolio-v5 de <a href="https://brittanychiang.com/" target='_blank'> <strong>Brittany Chiang</strong></a>, esquissé librement sur Figma et codé sur Visual
+                    Studio Code par moi-même. Construit avec Vue.js et stylisé avec Tailwind CSS, déployé grâce à
+                    Onrender. <br> Merci d'être passé(e) ! Connectons-nous et
+                    explorons ensemble le monde fascinant de la technologie. ✨🚀
+                    <br> XoXo😘❤️❤️❤️</p>
 
                 <div id="app">
                     <router-link to="/DesignPage"
-                        class="flex flex-col items-center mt-24 text-white hover:text-gray-300">
-                        <i class="fas fa-laugh-wink mr-2"></i>
-                        <span class="text-xs text-gray">En savoir plus sur moi ?</span>
+                        class="flex flex-col items-center mt-24 text-Fwhite hover:text-gray-300" target='_blank'>
+                        <i class="fas fa-palette mx-auto"></i>
+                        <span class="text-xs text-gray">Plus? cliquez ici !</span>
                     </router-link>
                     <router-view></router-view>
                 </div>
@@ -256,8 +253,11 @@ import { ref, onMounted, nextTick } from 'vue';
 import profileImage from '@/assets/moi.jpg';
 import DesignPage from './DesignPage.vue';
 import ArchivePage from './ArchivePage.vue';
+import Message from './Message.vue';
+import { useRouter } from 'vue-router';
 
 export default {
+    name: 'LandingPage',
     setup() {
         const isVisible = ref(false);
         const container = ref(null);
@@ -268,10 +268,16 @@ export default {
             "Let’s create together!"
         ];
 
+        const router = useRouter();
+        const navigateTo = (route) => {
+            router.push(route);
+        };
+
         onMounted(async () => {
             await nextTick();
             typeText();
         });
+
 
         const typeText = () => {
             const text = texts[Math.floor(Math.random() * texts.length)];
@@ -301,12 +307,27 @@ export default {
             container,
             typingText,
             profileImage,
+            navigateTo,
         };
     }
 };
 </script>
 
 <style scoped>
+
+.custom-scroll {
+    height: 100vh;
+    /* Hauteur de la vue */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Pour Firefox */
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+    /* Pour Chrome, Safari et Edge */
+}
+
 .cursor {
     animation: blink 1s infinite;
     font-weight: lighter;

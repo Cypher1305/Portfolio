@@ -15,6 +15,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'), // Ajouter le plugin pour les barres de défilement
+  ],
 }
 
