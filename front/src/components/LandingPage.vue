@@ -82,12 +82,18 @@
                                 réseaux professionnel pour les petites entreprises.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-react"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-aws"></i></a>
+                                <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                        class="fab fa-node-js"></i></a>
+                                <a href="https://react.dev" target="_blank" class="tech-icon"><i
+                                        class="fab fa-react"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                                    class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                        class="fab fa-java"></i></a>
+                                <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                        class="fab fa-sass"></i></a>
+                                <a href="https://docs.aws.amazon.com" target="_blank" class="tech-icon"><i
+                                        class="fab fa-aws"></i></a>
                             </div>
                         </div>
                     </div>
@@ -102,10 +108,14 @@
                                 et mobiles.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                                <a href="https://www.figma.com" target="_blank" class="tech-icon"><i
+                                        class="fab fa-figma"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                                    class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"
+                                    class="tech-icon"><i class="fab fa-html5"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"
+                                    class="tech-icon"><i class="fab fa-css3-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -120,10 +130,14 @@
                                 projets.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3 mb-5">
-                                <a href="#" class="tech-icon"><i class="fab fa-symfony"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-docker"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
+                                <a href="https://symfony.com/doc/current/index.html" target="_blank"
+                                    class="tech-icon"><i class="fab fa-symfony"></i></a>
+                                <a href="https://docs.docker.com" target="_blank" class="tech-icon"><i
+                                        class="fab fa-docker"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"
+                                    class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"
+                                    class="tech-icon"><i class="fab fa-html5"></i></a>
                             </div>
                         </div>
                     </div>
@@ -147,11 +161,16 @@
                                 algorithmes.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-react"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
+                                <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                        class="fab fa-node-js"></i></a>
+                                <a href="https://react.dev" target="_blank" class="tech-icon"><i
+                                        class="fab fa-react"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                                    class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                        class="fab fa-java"></i></a>
+                                <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                        class="fab fa-sass"></i></a>
                             </div>
                             <div class="project-links flex gap-4">
                                 <a href="#" target="_blank" class="submit-btn">➤ Télécharger</a>
@@ -170,11 +189,14 @@
                                 Développement d'applications web dynamiques pour la gestion des contacts.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
-                                <a href="#" class="tech-icon"><i class="fab fa-node-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-react"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-java"></i></a>
-                                <a href="#" class="tech-icon"><i class="fab fa-sass"></i></a>
+                                <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                        class="fab fa-node-js"></i></a>
+                                <a href="https://react.dev" target="_blank" class="tech-icon"><i
+                                        class="fab fa-react"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                                    class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                        class="fab fa-java"></i></a>
                             </div>
                             <div class="project-links flex gap-4">
                                 <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -183,9 +205,6 @@
                             </div>
                         </div>
                     </div>
-
-                    
-
 
 
 
@@ -207,34 +226,46 @@
                     </div>
                     <div class="mb-4">
                         <div class="flex justify-between">
-                            <span class="font-bold">Communication Digitale</span>
-                            <span>85%</span>
+                            <span class="font-bold">UI/UX Design</span>
+                            <span>95%</span>
                         </div>
                         <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 85%;"></div>
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between">
+                            <span class="font-bold">Communication Digitale</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 95%;"></div>
                         </div>
                     </div>
 
                     <div class="mb-4">
                         <div class="flex justify-between">
                             <span class="font-bold">Gestion de Projet</span>
-                            <span>80%</span>
+                            <span>85%</span>
                         </div>
                         <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 80%;"></div>
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 85%;"></div>
                         </div>
                     </div>
                 </div>
 
-                <p class="mt-24 ml-9 text-justify text-xs text-gray">Inspirée du protfolio-v5 de <a href="https://brittanychiang.com/" target='_blank'> <strong>Brittany Chiang</strong></a>, esquissé librement sur Figma et codé sur Visual
+                <p class="mt-24 ml-9 text-justify text-xs text-gray">Inspirée du protfolio-v5 de <a
+                        href="https://brittanychiang.com/" target='_blank'> <strong>Brittany Chiang</strong></a>,
+                    esquissé librement sur Figma et codé sur Visual
                     Studio Code par moi-même. Construit avec Vue.js et stylisé avec Tailwind CSS, déployé grâce à
                     Onrender. <br> Merci d'être passé(e) ! Connectons-nous et
                     explorons ensemble le monde fascinant de la technologie. ✨🚀
-                    <br> XoXo😘❤️❤️❤️</p>
+                    <br> XoXo😘❤️❤️❤️
+                </p>
 
                 <div id="app">
-                    <router-link to="/DesignPage"
-                        class="flex flex-col items-center mt-24 text-white" target='_blank'>
+                    <router-link to="/DesignPage" class="flex flex-col items-center mt-24 text-white" target='_blank'>
                         <i class="fas fa-palette mx-auto"></i>
                         <span class="text-xs text-gray">Plus? cliquez ici !</span>
                     </router-link>
@@ -314,7 +345,6 @@ export default {
 </script>
 
 <style scoped>
-
 .custom-scroll {
     height: 100vh;
     /* Hauteur de la vue */

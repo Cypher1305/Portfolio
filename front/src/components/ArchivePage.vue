@@ -27,20 +27,27 @@ onMounted(() => {
             <!-- Grille de projets responsive -->
             <div class="projects-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -49,20 +56,27 @@ onMounted(() => {
                 </div>
 
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -71,20 +85,27 @@ onMounted(() => {
                 </div>
 
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -93,20 +114,27 @@ onMounted(() => {
                 </div>
 
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -115,20 +143,27 @@ onMounted(() => {
                 </div>
 
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
@@ -137,26 +172,40 @@ onMounted(() => {
                 </div>
 
                 <!-- Carte de projet -->
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet" class="object-cover w-full h-full rounded-lg">
+                <div
+                    class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
+                        <img src="/bugster.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">Designer UI/UX · Freelance</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Conception d’interfaces utilisateur intuitives et esthétiques pour des applications web et
-                        mobiles.
+                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
+                        algorithmes.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="#" class="tech-icon"><i class="fab fa-figma"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-html5"></i></a>
-                        <a href="#" class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
+                                class="fab fa-node-js"></i></a>
+                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+                            class="tech-icon"><i class="fab fa-js"></i></a>
+                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
+                                class="fab fa-java"></i></a>
+                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
+                                class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
                         <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
+
+
+
+
+
+
+               
 
                 <!-- Répétez les cartes de projet ci-dessus -->
             </div>
