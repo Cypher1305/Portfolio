@@ -55,7 +55,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤ Visiter</a>
                         <a href="https://github.com/Cypher1305/Bugster" target="_blank" class="submit-btn">Code
                             source</a>
                     </div>
@@ -83,7 +83,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤ Visiter</a>
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="https://Cypher1305.github.io/Portfolio" target="_blank" class="submit-btn">➤
+                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
                             Visiter</a>
                         <a href="https://github.com/Cypher1305/Portfolio" target="_blank" class="submit-btn">Code
                             source</a>
@@ -139,7 +139,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="https://Cypher1305.github.io/ABS" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤ Visiter</a>
                         <a href="https://github.com/Cypher1305/ABS" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="https://Cypher1305.github.io/Es-blog" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤ Visiter</a>
                         <a href="https://github.com/Cypher1305/Es-blog" target="_blank" class="submit-btn">Code
                             source</a>
                     </div>
@@ -215,7 +215,7 @@ onMounted(() => {
             <!-- Popup modal "Bientôt disponible" -->
             <div v-if="showPopup" class="modal-overlay" @click.self="showPopup = false">
                 <div class="modal-content">
-                    <p>Bientôt disponible !</p>
+                    <p class="bg-white font-semibold">Bientôt disponible!😉</p>
                     <button @click="showPopup = false" class="close-btn">Fermer</button>
                 </div>
             </div>
@@ -305,13 +305,13 @@ onMounted(() => {
 
 .modal-content p {
     font-size: 18px;
-    color: #333;
+    color:#000814;
     margin-bottom: 20px;
 }
 
 .close-btn {
     padding: 8px 16px;
-    background: #333;
+    background: #000814;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -320,6 +320,6 @@ onMounted(() => {
 }
 
 .close-btn:hover {
-    background: #555;
+    background: #14AE5C;
 }
 </style>
