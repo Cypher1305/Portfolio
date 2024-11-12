@@ -255,13 +255,9 @@
                     </div>
                 </div>
 
-                <p class="mt-24 ml-9 text-justify text-xs text-gray">Inspirée du protfolio-v5 de <a
-                        href="https://brittanychiang.com/" target='_blank'> <strong>Brittany Chiang</strong></a>,
-                    esquissé librement sur Figma et codé sur Visual
-                    Studio Code par moi-même. Construit avec Vue.js et stylisé avec Tailwind CSS, déployé grâce à
-                    Onrender. <br> Merci d'être passé(e) ! Connectons-nous et
-                    explorons ensemble le monde fascinant de la technologie. ✨🚀
-                    <br> XoXo😘❤️❤️❤️
+                <p class="mt-24 text-justify text-xs text-gray mx-auto ">Construit avec Vue.js et stylisé avec Tailwind
+                    CSS, déployé grâce à GitHub Pages. <br> Merci d'être passé(e) ! Au plaisir de vous lire et
+                    d'explorer de nouvelles opportunités ensemble.
                 </p>
 
                 <div id="app">
@@ -271,6 +267,10 @@
                     </router-link>
                     <router-view></router-view>
                 </div>
+                <p class="mt-2 mx-auto mb-0 text-justify text-xs text-gray">
+                    <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
+                    <strong>Cypher1305</strong>
+                </p>
 
 
 
