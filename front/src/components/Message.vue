@@ -18,7 +18,12 @@
             </form>
         </div>
         <!-- Popup confirmation message -->
-        <div v-if="isSubmitted" class="popup">Votre message a bien été envoyé, je serai ravie de vous répondre 😊</div>
+        <div v-if="isSubmitted" class="popup-container">
+            <div class="popup">
+                <p class="bg-white">Votre message a bien été envoyé ! <br> je serai ravie de vous répondre 😊</p>
+                <button @click="navigateTo('/')" class="popup-close-btn">Retour à l'accueil</button>
+            </div>
+        </div>
 
         <div @click="navigateTo('/')" class="mt-5 ml-2 text-md text-gray cursor-pointer">⟵ Retour</div>
     </div>
@@ -74,14 +79,6 @@ export default {
 </script>
 
 <style scoped>
-/* CSS inchangé */
-.popup {
-    color: #14AE5C;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 16px;
-    transition: opacity 0.3s ease;
-}
 
 .form-container {
     width: 400px;
@@ -186,4 +183,55 @@ export default {
         0px 0px 15px rgba(0, 8, 20, 0.4);
     transform: scale(1.1);
 }
+
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup p {
+    font-size: 18px;
+    color: #000814;
+    font-weight: 600;
+}
+
+.popup-close-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #000814;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.popup-close-btn:hover {
+    background-color: #14AE5C;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 </style>

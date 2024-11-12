@@ -13,11 +13,10 @@
                 class="w-full lg:w-[38%] lg:h-screen lg:fixed bg-custom-black border-r border-blue p-1 font-inter flex flex-col items-center justify-center">
                 <img :src="profileImage" alt="Photo" class="rounded-full w-40 h-30 mt-1 photo" />
                 <div class="w-[80%] mx-auto flex flex-col ">
-                    <h1 class="text-3xl text-white font-inter font-bold mt-1 text-left">YAO Kossia Bénédicte</h1>
+                    <h1 class="text-3xl text-white font-inter font-bold mt-2 text-left">YAO Kossia Bénédicte</h1>
                     <h4 class="text-2xl text-white font-inter text-left">Développeur Full Stack</h4>
                     <p class="text-base text-gray font-inter mb-2 text-center text-justify">
-                        Je conçois des sites, des applications web/mobiles, et développe des projets
-                        innovants visant à apporter des solutions concrètes aux défis actuels.
+                        Je conçois des sites et des applications web/mobiles, ainsi que des projets pour répondre aux défis actuels.
                     </p>
                     <div @click="navigateTo('/Message')" class=" code_button text-center"><span>Message</span></div>
 
@@ -142,7 +141,7 @@
                         </div>
                     </div>
                     <a href="/CV_YAO_Kossia_Benedicte.pdf" target="_blank"
-                        class="mt-5 ml-2 text-lg font-semibold text-gray">➤ Voir mon CV complet</a>
+                        class="mt-5 ml-2 text-lg font-semibold text-gray hover:text-custom-green hover:underline transition-colors duration-100 ease-in-out">➤ Voir mon CV complet</a>
                 </div>
 
                 <div id="projets" class="mt-12">
@@ -208,7 +207,7 @@
 
 
 
-                    <a href="/ArchivePage" target="_blank" class="mt-9 ml-2 text-lg font-semibold text-gray">➤ Voir tous
+                    <a href="/ArchivePage" target="_blank" class="mt-9 ml-2 text-lg font-semibold text-gray hover:text-custom-green hover:underline transition-colors duration-100 ease-in-out">➤ Voir tous
                         mes projets</a>
                 </div>
 
@@ -262,12 +261,12 @@
 
                 <div id="app">
                     <router-link to="/DesignPage" class="flex flex-col items-center mt-24 text-white" target='_blank'>
-                        <i class="fas fa-palette mx-auto"></i>
-                        <span class="text-xs text-gray">Plus? cliquez ici !</span>
+                        <i class="fas fa-palette mx-auto cursor-pointer"></i>
+                        <span class="text-xs text-gray cursor-pointer">Plus? cliquez ici !</span>
                     </router-link>
                     <router-view></router-view>
                 </div>
-                <p class="mt-2 mx-auto mb-0 text-justify text-xs text-gray">
+                <p class="mt-6 mx-auto mb-0 text-justify text-xs text-gray">
                     <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
                     <strong>Cypher1305</strong>
                 </p>
