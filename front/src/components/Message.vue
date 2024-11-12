@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col bg-custom-black h-screen text-custom-green items-center justify-center custom-scroll">
-        <div class="form-container">
+        <div class="form-container mt-5">
             <form class="form" @submit.prevent="submitForm" ref="contactForm">
                 <div class="form-group">
                     <label for="email">Votre Nom</label>
@@ -26,6 +26,13 @@
         </div>
 
         <div @click="navigateTo('/')" class="mt-5 ml-2 text-md text-gray cursor-pointer">⟵ Retour</div>
+
+        <!-- ma signature -->
+        <p class="mt-4 mx-auto p-4 text-justify text-xs text-gray">
+            <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
+            <strong>Cypher1305</strong>
+        </p>
+        <!-- ma signature -->
     </div>
 </template>
 
@@ -79,7 +86,6 @@ export default {
 </script>
 
 <style scoped>
-
 .form-container {
     width: 400px;
     background: linear-gradient(#000814, #000814) padding-box,
@@ -230,8 +236,12 @@ export default {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
 </style>

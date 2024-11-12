@@ -18,10 +18,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-custom-black h-full p-6 flex items-center justify-center text-gray custom-scroll">
+    <div class="bg-custom-black h-screen p-6 flex items-center justify-center text-gray custom-scroll scrollbar-hidden">
         <Loader :isLoading="isLoading" />
-        <div v-if="!isLoading" class="projects-archive container flex flex-col mt-[300px] mx-auto">
-            <div @click="navigateTo('/')" class="mb-9 text-md text-gray cursor-pointer">⟵ Retour</div>
+        <div v-if="!isLoading" class=" h-full p-2 projects-archive container flex flex-col mx-auto">
+            <div @click="navigateTo('/')" class="mb-5 text-md text-gray cursor-pointer mt-2">⟵ Retour</div>
             <h1 class="text-2xl font-bold text-custom-green mb-6">Projets Réalisés</h1>
 
             <!-- Grille de projets responsive -->
@@ -205,11 +205,20 @@ onMounted(() => {
 
 
 
-               
+
 
                 <!-- Répétez les cartes de projet ci-dessus -->
             </div>
+
+            <!-- ma signature -->
+            <p class="mt-6 mx-auto p-5 text-justify text-xs text-gray">
+                <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
+                <strong>Cypher1305</strong>
+            </p>
+            <!-- ma signature -->
+
         </div>
+
     </div>
 </template>
 

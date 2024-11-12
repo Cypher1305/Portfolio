@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-custom-black h-full flex items-center justify-center text-gray custom-scroll">
+    <div class="bg-custom-black h-screen flex items-center justify-center text-gray custom-scroll">
         <Loader :isLoading="isLoading" />
-        <div v-if="!isLoading" class="projects-archive container flex flex-col mx-auto p-2">
+        <div v-if="!isLoading" class="projects-archive container flex flex-col mx-auto p-2 h-full">
             <div @click="navigateTo('/')" class="mt-6 mb-6 text-md text-gray cursor-pointer">⟵ Retour</div>
             <h1 class="text-2xl font-bold text-custom-green mb-6">Mes créations</h1>
 
@@ -70,6 +70,12 @@
 
 
             </div>
+            <!-- ma signature -->
+            <p class="mt-6 mx-auto p-5 text-justify text-xs text-gray">
+                <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
+                <strong>Cypher1305</strong>
+            </p>
+            <!-- ma signature -->
         </div>
     </div>
 </template>
