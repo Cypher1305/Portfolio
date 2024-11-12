@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-custom-black h-screen flex items-center justify-center text-gray custom-scroll">
+    <div class="bg-custom-black h-screen flex items-center justify-center text-gray custom-scroll p-6">
         <Loader :isLoading="isLoading" />
         <div v-if="!isLoading" class="projects-archive container flex flex-col mx-auto p-2 h-full">
-            <div @click="navigateTo('/')" class="mt-6 mb-6 text-md text-gray cursor-pointer">⟵ Retour</div>
+            <div @click="navigateTo('/')" class="mt-2 mb-5 text-md text-gray cursor-pointer">⟵ Retour</div>
             <h1 class="text-2xl font-bold text-custom-green mb-6">Mes créations</h1>
 
             <!-- Grille de projets responsive -->

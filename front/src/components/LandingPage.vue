@@ -54,7 +54,7 @@
             </header>
 
 
-            <section class="lg:ml-[40%] mx-auto p-8 text-white flex flex-col custom-scroll scrollbar-hidden">
+            <section class="lg:ml-[40%] mx-auto p-8 text-white flex flex-col scrollbar-hidden">
                 <div id="about">
                     <h2 class="text-2xl mb-2">À PROPOS</h2>
                     <p class="mt-5 text-justify text-base text-gray">Créative, autodidacte et dotée d’un excellent

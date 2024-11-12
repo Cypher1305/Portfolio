@@ -163,7 +163,7 @@ onMounted(() => {
                         <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
                                 class="fab fa-java"></i></a>
                         <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
-                                class="fab fa-sass"></i></a>
+                                class="fab fa-sass"> </i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
