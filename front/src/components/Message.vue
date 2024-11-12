@@ -1,23 +1,26 @@
 <template>
     <div class="flex flex-col bg-custom-black h-screen text-custom-green items-center justify-center custom-scroll">
         <div class="form-container">
-            <form class="form" @submit.prevent="submitForm">
+            <form class="form" @submit.prevent="submitForm" ref="contactForm">
+                <div class="form-group">
+                    <label for="email">Votre Nom</label>
+                    <input type="text" id="nom" name="nom" required v-model="nom">
+                </div>
                 <div class="form-group">
                     <label for="email">Votre email</label>
-                    <input type="text" id="email" name="email" required="" v-model="email">
+                    <input type="text" id="email" name="email" required v-model="email">
                 </div>
                 <div class="form-group">
                     <label for="textarea">Comment puis-je vous aider?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="" v-model="message">          </textarea>
+                    <textarea name="message" id="textarea" rows="10" required v-model="message"></textarea>
                 </div>
                 <button class="form-submit-btn" type="submit">Envoyer</button>
             </form>
         </div>
         <!-- Popup confirmation message -->
-        <div v-if="isSubmitted" class="popup">Message envoyé avec succès !</div>
+        <div v-if="isSubmitted" class="popup">Votre message a bien été envoyé, je serai ravie de vous répondre 😊</div>
 
         <div @click="navigateTo('/')" class="mt-5 ml-2 text-md text-gray cursor-pointer">⟵ Retour</div>
-
     </div>
 </template>
 
@@ -33,52 +36,45 @@ export default {
             router.push(route);
         };
 
-        // Variables pour les champs du formulaire
         const email = ref('');
+        const nom = ref('');
         const message = ref('');
         const isSubmitted = ref(false);
+        const contactForm = ref(null);
 
-        // Fonction pour soumettre le formulaire
         const submitForm = async () => {
             try {
-                // Envoi de l'email et du message à un serveur
                 const response = await fetch('http://localhost:3000/send', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        email: email.value,
-                        message: message.value,
-                    }),
+                    body: JSON.stringify({ nom: nom.value, email: email.value, message: message.value }),
                 });
-
-                if (response.ok) {
-                    isSubmitted.value = true; // Affiche le popup
-                    setTimeout(() => {
-                        isSubmitted.value = false; // Masque le popup après 3 secondes
-                    }, 3000);
-                } else {
-                    console.error('Erreur lors de l’envoi du message.');
-                }
+                if (!response.ok) {
+                    throw new Error("Erreur lors de l'envoi du message.");
+                };
+                const data = await response.json();
+                console.log(data.message);
+                isSubmitted.value = true; // Affiche le message de confirmation si l'envoi est réussi
             } catch (error) {
-                console.error('Erreur réseau:', error);
+                console.error(error);
             }
         };
 
-
-
         return {
-            navigateTo, 
-            email, 
-            message, 
-            submitForm, 
-            isSubmitted
+            navigateTo,
+            nom,
+            email,
+            message,
+            submitForm,
+            isSubmitted,
+            contactForm,
         };
     }
 };
 </script>
 
 <style scoped>
-
+/* CSS inchangé */
 .popup {
     color: #14AE5C;
     font-weight: bold;
@@ -186,8 +182,8 @@ export default {
 .form-container .form-submit-btn:hover {
     color: #fff;
     border-color: #14AE5C;
-    box-shadow: 0px 0px 8px 4px rgba(8, 235, 252, 0.2), 
-    0px 0px 15px rgba(0, 8, 20, 0.4);
+    box-shadow: 0px 0px 8px 4px rgba(8, 235, 252, 0.2),
+        0px 0px 15px rgba(0, 8, 20, 0.4);
     transform: scale(1.1);
 }
 </style>

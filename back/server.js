@@ -1,35 +1,65 @@
-// server.js
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+
 const app = express();
 
 app.use(bodyParser.json());
 app.use(express.json());
-app.use (cors());
+app.use(cors());
 
+// Configurer Nodemailer avec un transporteur SMTP
+const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port:  587, // Utilisez 465 pour une connexion sécurisée SSL, sinon laissez 587
+    secure: false, // Utilisez `true` pour SSL/TLS si vous changez le port en 465
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
+});
+
+// Route pour envoyer un e-mail et enregistrer les données
 app.post('/send', async (req, res) => {
-    const { email, message } = req.body;
+    console.log('Données reçues:', req.body);
+    const { nom, email, message } = req.body;
 
-    // Configurer Nodemailer
-
-    const mailOptions = {
-        from: email,
-        to: 'k.yao1305@gmail.com', // Remplacez par votre adresse email de réception
-        subject: 'Nouveau contact',
-        text: `De: ${email}\nMessage:\n${message}`,
-    };
+    // Vérification des champs obligatoires
+    if (!nom || !email || !message) {
+        return res.status(400).json({ error: 'Tous les champs sont requis' });
+    }
 
     try {
-        await transporter.sendMail(mailOptions);
-        res.status(200).send({ message: 'e-mail envoyé avec succès !' });
-    } catch (error) {
-        console.error('Erreur lors de l’envoi de l’e-mail :', error);
-        res.status(500).send({ error: 'Erreur lors de l’envoi de l’e-mail' });
+        // Options de l'email
+        const mailOptions = {
+            from: email, // Adresse email configurée dans Nodemailer
+            replyTo: email, // Répondre à l'utilisateur
+            to: process.env.EMAIL_USER, // Votre adresse pour recevoir le message
+            subject: `Message de Mme/M. ${nom}`,
+            text: message,
+            html: `<p>${message}</p>`,
+        };
+
+        // Envoyer l'email
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.error("Erreur lors de l'envoi de l'email:", error);
+                return res.status(500).json({ message: "Erreur lors de l'envoi de l'email" });
+            } else {
+                console.log('Email envoyé:', info.response);
+                return res.status(200).json({ message: 'Message envoyé avec succès' });
+            }
+        });
+
+    } catch (err) {
+        console.error("Erreur lors de l'enregistrement ou de l'envoi du message:", err.message);
+        res.status(500).json({ message: "Erreur serveur" });
     }
 });
 
+// Lancer le serveur sur le port 3000
 app.listen(3000, () => {
-    console.log('Serveur en cours d’exécution sur le port 3000');
+    console.log(`Serveur démarré sur http://localhost:3000`);
 });

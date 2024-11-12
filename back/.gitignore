@@ -1,0 +1,8 @@
+# Ignorer le fichier d'environnement
+.env
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de cache
+.cache/
