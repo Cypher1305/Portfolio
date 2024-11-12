@@ -185,7 +185,7 @@
                         <div class="experience-details ml-6 flex flex-col">
                             <h1 class="text-lg font-semibold">PROXIMATE · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
-                                Développement d'applications web dynamiques pour la gestion des contacts.
+                                Application web pour la gestion et partage de contact.
                             </p>
                             <div class="stack mt-2 flex flex-wrap gap-3">
                                 <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i

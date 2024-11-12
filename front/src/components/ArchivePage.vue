@@ -51,7 +51,7 @@ onMounted(() => {
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
+                        <a href="https://github.com/Cypher1305/Bugster" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
@@ -59,13 +59,12 @@ onMounted(() => {
                 <div
                     class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
-                        <img src="/bugster.png" alt="Miniature du projet"
+                        <img src="/b.png" alt="Miniature du projet"
                             class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">PROXIMATE · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Application web pour la gestion et partage de contact.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -80,7 +79,6 @@ onMounted(() => {
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
@@ -88,13 +86,12 @@ onMounted(() => {
                 <div
                     class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
-                        <img src="/bugster.png" alt="Miniature du projet"
+                        <img src="/b.png" alt="Miniature du projet"
                             class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">Portfolio v1 · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Mon premier portfolio (en ligne).
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -108,8 +105,8 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
+                        <a href="https://Cypher1305.github.io/Portfolio" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="https://github.com/Cypher1305/Portfolio" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
@@ -117,13 +114,12 @@ onMounted(() => {
                 <div
                     class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
-                        <img src="/bugster.png" alt="Miniature du projet"
-                            class="object-fit w-auto h-full rounded-lg mx-auto">
+                        <img src="/ABS.png" alt="Miniature du projet"
+                            class="object-cover w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">ABS · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Application Web de gestion de listes de présence.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -137,8 +133,8 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
+                        <a href="https://Cypher1305.github.io/ABS" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="https://github.com/Cypher1305/ABS" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
@@ -149,10 +145,9 @@ onMounted(() => {
                         <img src="/bugster.png" alt="Miniature du projet"
                             class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">LendMe · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Application mobile de prêts.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -166,8 +161,8 @@ onMounted(() => {
                                 class="fab fa-sass"> </i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
+                        <a href="https://Cypher1305.github.io/LendMe" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="https://github.com/Cypher1305/LendMe" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
@@ -178,10 +173,9 @@ onMounted(() => {
                         <img src="/bugster.png" alt="Miniature du projet"
                             class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">Es-blog · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Blog d'actualité autour des TIC et dédié aux projets étudiants (en TIC) de Côte d'Ivoire.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -195,8 +189,8 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code source</a>
+                        <a href="https://Cypher1305.github.io/Es-blog" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="https://github.com/Cypher1305/Es-blog" target="_blank" class="submit-btn">Code source</a>
                     </div>
                 </div>
 
