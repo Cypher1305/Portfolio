@@ -1,6 +1,5 @@
 {
     "scripts": {
-      "build": "cp -r ./public ./dist",
       "start": "node server.js"
     },
 
