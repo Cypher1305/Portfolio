@@ -207,7 +207,7 @@
 
 
 
-                    <div @click="navigateTo('/ArchivePage')" target="_blank" class="mt-9 ml-2 text-lg font-semibold text-gray hover:text-custom-green hover:underline transition-colors duration-100 ease-in-out">➤ Voir tous
+                    <div @click="navigateTo('/archive')" target="_blank" class="mt-9 ml-2 text-lg font-semibold text-gray hover:text-custom-green hover:underline transition-colors duration-100 ease-in-out">➤ Voir tous
                         mes projets</div>
                 </div>
 
@@ -259,7 +259,7 @@
                     d'explorer de nouvelles opportunités ensemble.
                 </p>
 
-                    <div @click="navigateTo('/DesignPage')" class="flex flex-col items-center mt-24 text-white" target='_blank'>
+                    <div @click="navigateTo('/creas')" class="flex flex-col items-center mt-24 text-white" target='_blank'>
                         <i class="fas fa-palette mx-auto cursor-pointer"></i>
                         <span class="text-xs text-gray cursor-pointer">Plus? cliquez ici !</span>
                     </div>

@@ -14,22 +14,22 @@ const routes = [
     component: LandingPage,
   },
   {
-    path: '/ArchivePage',
+    path: '/archive',
     name: 'ArchivePage',
     component: ArchivePage,
   },
   {
-    path: '/DesignPage',
+    path: '/creas',
     name: 'DesignPage',
     component: DesignPage,
   },
   {
-    path: '/Message',
+    path: '/message',
     name: 'Message',
     component: Message,
   },
   {
-    path: '/OopsPage',
+    path: '/oopsPage',
     name: 'OopsPage',
     component: OopsPage,
   },
