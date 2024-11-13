@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Importation des composants de vos pages
-import LandingPage from '../components/LandingPage.vue';
-import ArchivePage from '../components/ArchivePage.vue';
-import DesignPage from '../components/DesignPage.vue';
-import Message from '@/components/Message.vue';
-import OopsPage from '@/components/OopsPage.vue';
+import LandingPage from '@LandingPage.vue';
+import ArchivePage from '@ArchivePage.vue';
+import DesignPage from '@DesignPage.vue';
+import Message from '@Message.vue';
+import OopsPage from '@OopsPage.vue';
 
 const routes = [
   {
