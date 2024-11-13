@@ -2,20 +2,24 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const path = require('path');
 const cors = require('cors');
 
-const app = express();
+const app = express(express.static(path.join(__dirname, 'dist')));
 
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
     origin: 'https://cypher1305.onrender.com', // Remplace par ton domaine front-end
-  }));
+}));
 
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+});
 // Configurer Nodemailer avec un transporteur SMTP
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port:  587, // Utilisez 465 pour une connexion sécurisée SSL, sinon laissez 587
+    port: 587, // Utilisez 465 pour une connexion sécurisée SSL, sinon laissez 587
     secure: false, // Utilisez `true` pour SSL/TLS si vous changez le port en 465
     auth: {
         user: process.env.EMAIL_USER,
