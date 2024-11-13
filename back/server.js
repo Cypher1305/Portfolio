@@ -14,9 +14,6 @@ app.use(cors({
     origin: 'https://cypher1305.onrender.com', // Remplace par ton domaine front-end
 }));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-});
 // Configurer Nodemailer avec un transporteur SMTP
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
