@@ -1,0 +1,4 @@
+staticPublish:
+  routes:
+    - src: /.*
+      dest: /index.html
