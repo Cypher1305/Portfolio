@@ -66,7 +66,7 @@ app.post('/send', async (req, res) => {
     }
 });
 
-// Lancer le serveur sur le port 3000
-app.listen(3000, () => {
-    console.log(`Serveur démarré sur http://localhost:3000`);
+// Lancer le serveur sur le port 3001
+app.listen(3001, () => {
+    console.log(`Serveur démarré`);
 });
