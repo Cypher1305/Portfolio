@@ -7,6 +7,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    port: 3000, // Le port utilisé par Render
+    strictPort: true, // Ne pas chercher un autre port si celui-ci est occupé
+    host: '0.0.0.0' // Permet à Render d'accéder à l'application
+  },
   plugins: [
     vue(),
     vueJsx(),
