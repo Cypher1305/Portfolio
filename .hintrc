@@ -7,7 +7,9 @@
       "default",
       {
         "ignore": [
-          "scrollbar-width"
+          "scrollbar-width",
+          "-webkit-text-size-adjust",
+          "zoom"
         ]
       }
     ]
