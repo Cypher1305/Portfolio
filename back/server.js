@@ -5,8 +5,9 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 
-const app = express(express.static(path.join(__dirname, 'dist')));
+const app = express();
 
+app.use(express.static(path.join(__dirname, 'dist')));
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
@@ -35,6 +36,11 @@ app.post('/send', async (req, res) => {
     // Vérification des champs obligatoires
     if (!nom || !email || !message) {
         return res.status(400).json({ error: 'Tous les champs sont requis' });
+    }
+    // Validation basique de l'email
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailRegex.test(email)) {
+        return res.status(400).json({ error: 'Email invalide' });
     }
 
     try {
