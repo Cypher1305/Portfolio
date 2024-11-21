@@ -330,9 +330,10 @@ export default {
         const container = ref(null);
         const typingText = ref(null);
         const texts = [
-            "Welcome to my portfolio",
-            "Discover my projects",
-            "Let’s create together!"
+            "Bienvenue dans mon portfolio",
+            "Découvrez mes projets",
+            "Découvrez mes projets",
+            "Prêt à donner vie à vos projets!"
         ];
 
         const showPopup = ref(false);
