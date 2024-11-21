@@ -303,7 +303,7 @@
                 <p class=" mt-5 text-center text-xs text-gray mx-auto ">Construit avec Vue.js et stylisé avec Tailwind
                     CSS, déployé grâce à Render.
                 </p>
-                <p class="mt-2 mx-auto mb-0 text-justify text-xs text-gray">
+                <p class="mt-1 mx-auto mb-0 text-justify text-xs text-gray">
                     <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
                     <strong>Cypher1305</strong>
                 </p>
