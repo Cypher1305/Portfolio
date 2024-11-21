@@ -330,10 +330,17 @@ export default {
         const container = ref(null);
         const typingText = ref(null);
         const texts = [
-            "Bienvenue dans mon portfolio",
-            "Découvrez mes projets",
-            "Découvrez mes projets",
-            "Prêt à donner vie à vos projets!"
+            "Bienvenue sur mon portfolio",
+            "Parce que chaque détail compte.",
+            "Transformons vos idées en réalité.",
+            "La créativité au service de vos projets.",
+            "Des projets inspirés, des résultats impactants.",
+            "Des lignes de code, un monde de possibilités.",
+            "Allons au-delà de vos attentes.",
+            "Votre vision, mon expertise.",
+            "Des projets qui font la différence.",
+            "Connecter vos idées au monde digital.",
+            "Prêt à donner vie à vos projets?"
         ];
 
         const showPopup = ref(false);
@@ -361,7 +368,7 @@ export default {
                 if (index < text.length) {
                     typingText.value.innerText += text[index] === ' ' ? '\u00A0' : text[index];
                     index++;
-                    setTimeout(typingEffect, 150);
+                    setTimeout(typingEffect, 50);
                 } else {
                     // Ajouter une classe fade-out-active après l'animation de texte
                     setTimeout(() => {
