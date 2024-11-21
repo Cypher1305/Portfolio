@@ -219,53 +219,75 @@
 
                 <div id="projets" class="mt-12">
                     <h2 class="text-2xl mb-4">COMPÉTENCES</h2>
+                    <div class="mb-4">
+                        <div>
+                            <span class="font-bold mx-5">Développement Web/Mobile</span>
+                            <ul class="mt-3 mx-9">
+                                <li class="flex gap-3">
+                                    <span class="bg-custom-green rounded-full w-[5px]"></span>
+                                    <p class="text-gray text-justify text-base">Je suis capable de gérer un projet de bout en bout
+                                        c’est-à-dire, la conception d’interfaces utilisateur attrayantes, la gestion des
+                                        bases de données, la logique métier et
+                                        même le déploiement de l’application. Je maitrise plusieurs langages et
+                                        Framework. J’ai une grande capacité d’apprentissage ce qui me permet de
+                                        m’adapter rapidement à
+                                        de nouveaux langages et Framework.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div>
+                            <span class="font-bold mx-5">Gestion de projet</span>
+                            <ul class="mt-3 mx-9">
+                                <li class="flex gap-3">
+                                    <span class="bg-custom-green rounded-full w-[5px]"></span>
+                                    <p class="text-gray text-justify text-base">Je suis en mesure de piloter un projet de bout en
+                                        bout, depuis la planification initiale jusqu’à la livraison finale. J’excelle
+                                        dans la gestion des tâches, la coordination des équipes et la communication avec
+                                        les parties prenantes. J’utilise la méthodologie agile et l'outil Trello pour
+                                        organiser, prioriser et
+                                        suivre efficacement les étapes du projet .</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <div class="mb-4">
-                        <div class="flex justify-between">
-                            <span class="font-bold">Développement Web/Mobile</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex justify-between">
-                            <span class="font-bold">UI/UX Design</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 95%;"></div>
+                        <div>
+                            <span class="font-bold mx-5">UI/UX Design</span>
+                            <ul class="mt-3 mx-9">
+                                <li class="flex gap-3">
+                                    <span class="bg-custom-green rounded-full w-[5px]"></span>
+                                    <p class="text-gray text-justify text-base">Je maîtrise les principes fondamentaux du design
+                                        centré
+                                        utilisateur, la création de maquettes attrayantes et fonctionnelles, jusqu’aux
+                                        prototypes interactifs.
+                                        J’utilise des outils tels que Figma et Adobe XD.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="mb-4">
-                        <div class="flex justify-between">
-                            <span class="font-bold">Communication Digitale</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 95%;"></div>
+                        <div>
+                            <span class="font-bold mx-5">Communication digitale</span>
+                            <ul class="mt-3 mx-9">
+                                <li class="flex gap-3">
+                                    <span class="bg-custom-green rounded-full w-[5px]"></span>
+                                    <p class="text-gray text-justify text-base">Je suis compétente dans l’élaboration et
+                                        l’exécution de stratégies de communication digitale, incluant la création de
+                                        contenus engageants, la gestion des réseaux sociaux et le suivi des
+                                        performances. J’ai une expertise dans l’utilisation d’outils de gestion des
+                                        campagnes publicitaires et de reporting.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <div class="flex justify-between">
-                            <span class="font-bold">Gestion de Projet</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="bg-gray-700 rounded-full h-2">
-                            <div class="bg-green-500 h-2 rounded-full" style="width: 85%;"></div>
-                        </div>
-                    </div>
                 </div>
 
-                <p class="mt-24 text-justify text-xs text-gray mx-auto ">Construit avec Vue.js et stylisé avec Tailwind
-                    CSS, déployé grâce à GitHub Pages. <br> Merci d'être passé(e) ! Au plaisir de vous lire et
-                    d'explorer de nouvelles opportunités ensemble.
-                </p>
-
-                <div @click="navigateTo('/creas')" class="flex flex-col items-center mt-24 text-white" target='_blank'>
+                <div @click="navigateTo('/creas')" class="flex flex-col items-center mt-4 text-white" target='_blank'>
                     <i class="fas fa-palette mx-auto cursor-pointer"></i>
                     <span class="text-xs text-gray cursor-pointer">Plus? cliquez ici !</span>
                 </div>
@@ -278,7 +300,11 @@
                     </div>
                 </div>
 
-                <p class="mt-6 mx-auto mb-0 text-justify text-xs text-gray">
+                <p class=" mt-5 text-center text-xs text-gray mx-auto ">Construit avec Vue.js et stylisé avec Tailwind
+                    CSS, déployé grâce à Render. <br> Merci d'être passé(e) ! Au plaisir de vous lire et
+                    d'explorer de nouvelles opportunités ensemble.
+                </p>
+                <p class="mt-2 mx-auto mb-0 text-justify text-xs text-gray">
                     <i class="fas fa-code"></i> and <i class="fas fa-palette"></i> with ❤️ by
                     <strong>Cypher1305</strong>
                 </p>
@@ -426,7 +452,7 @@ export default {
 
 .modal-content p {
     font-size: 18px;
-    color:#000814;
+    color: #000814;
     margin-bottom: 20px;
 }
 
@@ -443,5 +469,4 @@ export default {
 .close-btn:hover {
     background: #14AE5C;
 }
-
 </style>
