@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
-    origin: 'https://cypher1305.onrender.com', // Remplace par ton domaine front-end
+    origin: 'https://cypher1305.onrender.com/Message', // Remplace par ton domaine front-end
 }));
 
 // Configurer Nodemailer avec un transporteur SMTP
