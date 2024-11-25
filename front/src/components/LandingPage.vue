@@ -13,7 +13,7 @@
                 class="w-full lg:w-[38%] lg:h-screen lg:fixed bg-custom-black border-r border-blue p-1 font-inter flex flex-col items-center justify-center">
                 <img :src="profileImage" alt="Photo" class="rounded-full w-40 h-30 mt-1 photo" />
                 <div class="w-[80%] mx-auto flex flex-col ">
-                    <h1 class="text-3xl text-white font-inter font-bold mt-2 text-left">YAO Kossia Bénédicte</h1>
+                    <h1 class="text-2xl text-white font-inter font-bold mt-2 text-left">YAO Kossia Bénédicte</h1>
                     <h4 class="text-2xl text-white font-inter text-left">Développeur Full Stack</h4>
                     <p class="text-base text-gray font-inter mb-2 text-center text-justify">
                         Je conçois des sites et des applications web/mobiles, ainsi que des projets pour répondre aux
