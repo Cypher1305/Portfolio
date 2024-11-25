@@ -181,7 +181,7 @@
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
                         <div class="project-thumbnail w-[200px] h-[200px] mb-4 mt-5 ">
-                            <img src="/bugster.png" alt="Miniature du projet" class="object-cover">
+                            <img src="/bugster.png" alt="Miniature du projet" class="object-fit">
                         </div>
                         <div class="experience-details flex flex-col">
                             <h1 class="text-lg font-semibold">BUGSTER · Projet personnel</h1>
