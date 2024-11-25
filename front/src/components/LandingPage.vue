@@ -152,8 +152,7 @@
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
                         <div class="project-thumbnail w-32 h-32 mb-4 mt-4">
-                            <img src="/b.png" alt="Miniature du projet"
-                                class="object-cover w-auto h-auto rounded-lg">
+                            <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
                         <div class="experience-details ml-6 flex flex-col">
                             <h1 class="text-lg font-semibold">Pain de Vie · Projet personnel</h1>
@@ -167,6 +166,10 @@
                                         class="fab fa-react"></i></a>
                                 <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
                                     class="tech-icon"><i class="fab fa-js"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"
+                                    class="tech-icon"><i class="fab fa-css3-alt"></i></a>
+                                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"
+                                    class="tech-icon"><i class="fab fa-html5"></i></a>
                             </div>
                             <div class="project-links flex gap-4">
                                 <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
@@ -221,7 +224,8 @@
                             <ul class="mt-3 mx-9">
                                 <li class="flex gap-3">
                                     <span class="bg-custom-green rounded-full w-[5px]"></span>
-                                    <p class="text-gray text-justify text-base">Je suis capable de gérer un projet de bout en bout
+                                    <p class="text-gray text-justify text-base">Je suis capable de gérer un projet de
+                                        bout en bout
                                         c’est-à-dire, la conception d’interfaces utilisateur attrayantes, la gestion des
                                         bases de données, la logique métier et
                                         même le déploiement de l’application. Je maitrise plusieurs langages et
@@ -238,7 +242,8 @@
                             <ul class="mt-3 mx-9">
                                 <li class="flex gap-3">
                                     <span class="bg-custom-green rounded-full w-[5px]"></span>
-                                    <p class="text-gray text-justify text-base">Je suis en mesure de piloter un projet de bout en
+                                    <p class="text-gray text-justify text-base">Je suis en mesure de piloter un projet
+                                        de bout en
                                         bout, depuis la planification initiale jusqu’à la livraison finale. J’excelle
                                         dans la gestion des tâches, la coordination des équipes et la communication avec
                                         les parties prenantes. J’utilise la méthodologie agile et l'outil Trello pour
@@ -255,7 +260,8 @@
                             <ul class="mt-3 mx-9">
                                 <li class="flex gap-3">
                                     <span class="bg-custom-green rounded-full w-[5px]"></span>
-                                    <p class="text-gray text-justify text-base">Je maîtrise les principes fondamentaux du design
+                                    <p class="text-gray text-justify text-base">Je maîtrise les principes fondamentaux
+                                        du design
                                         centré
                                         utilisateur, la création de maquettes attrayantes et fonctionnelles, jusqu’aux
                                         prototypes interactifs.
