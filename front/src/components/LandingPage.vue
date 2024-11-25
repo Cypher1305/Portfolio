@@ -154,7 +154,7 @@
                         <div class="project-thumbnail w-[150px] h-[150px] mb-4 mt-4">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
-                        <div class="experience-details ml-4 flex flex-col">
+                        <div class="experience-details ml-2 flex flex-col">
                             <h1 class="text-lg font-semibold">Pain de Vie · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
                                 Application mobile pour le partage quotidien de Versets Bibliques.
@@ -180,7 +180,7 @@
 
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <div class="project-thumbnail w-32 h-32 mb-4 mt-5 ">
+                        <div class="project-thumbnail w-[150px] h-[150px] mb-4 mt-5 ">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
                         <div class="experience-details ml-6 flex flex-col">
