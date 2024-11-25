@@ -180,10 +180,10 @@
 
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <div class="project-thumbnail w-[100px] h-[100px] mb-4 mt-5 ">
+                        <div class="project-thumbnail w-[130px] h-[130px] mb-4 mt-5 ">
                             <img src="/bugster.png" alt="Miniature du projet" class="object-fit">
                         </div>
-                        <div class="experience-details flex flex-col">
+                        <div class="experience-details ml-2 flex flex-col">
                             <h1 class="text-lg font-semibold">BUGSTER · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
                                 Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
