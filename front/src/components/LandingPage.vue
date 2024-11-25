@@ -331,15 +331,12 @@ export default {
         const typingText = ref(null);
         const texts = [
             "Bienvenue sur mon portfolio",
-            "Parce que chaque détail compte.",
+            "Chaque détail compte.",
             "Transformons vos idées en réalité.",
-            "La créativité au service de vos projets.",
-            "Des projets inspirés, des résultats impactants.",
-            "Des lignes de code, un monde de possibilités.",
+            "Des projets inspirés.",
             "Allons au-delà de vos attentes.",
             "Votre vision, mon expertise.",
             "Des projets qui font la différence.",
-            "Connecter vos idées au monde digital.",
             "Prêt à donner vie à vos projets?"
         ];
 
