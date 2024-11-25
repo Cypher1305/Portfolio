@@ -56,7 +56,7 @@ export default {
 
         const submitForm = async () => {
             try {
-                const response = await fetch('https://portfolio-i7jg.onrender.com/send', {
+                const response = await fetch('https://portfolio-6wzk.onrender.com/send', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ nom: nom.value, email: email.value, message: message.value }),
