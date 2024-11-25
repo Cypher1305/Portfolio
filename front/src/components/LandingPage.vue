@@ -201,7 +201,7 @@
                             </div>
                             <div class="project-links flex gap-4">
                                 <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
-                                    Visiter</a>
+                                    Télécharger</a>
                             </div>
                         </div>
                     </div>
