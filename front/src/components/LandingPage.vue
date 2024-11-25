@@ -152,7 +152,7 @@
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter gap-6">
                         <div class="project-thumbnail w-32 h-32 mb-4 mt-5">
-                            <img src="/b.png" alt="Miniature du projet"
+                            <img src="/bugster.png" alt="Miniature du projet"
                                 class="object-fit w-full h-full rounded-lg">
                         </div>
                         <div class="experience-details ml-6 flex flex-col">
