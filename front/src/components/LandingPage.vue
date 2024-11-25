@@ -332,12 +332,10 @@ export default {
         const texts = [
             "Bienvenue sur mon portfolio",
             "Chaque détail compte.",
-            "Transformons vos idées en réalité.",
             "Des projets inspirés.",
-            "Allons au-delà de vos attentes.",
+            "Allons au-delà de vos attentes",
             "Votre vision, mon expertise.",
-            "Des projets qui font la différence.",
-            "Prêt à donner vie à vos projets?"
+            "Donner vie à vos projets!"
         ];
 
         const showPopup = ref(false);
