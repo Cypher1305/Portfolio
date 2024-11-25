@@ -151,7 +151,7 @@
 
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <div class="project-thumbnail w-[150px] h-[150px] mb-4 mt-4">
+                        <div class="project-thumbnail w-[150px] h-[150px] mb-3 mt-4">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover">
                         </div>
                         <div class="experience-details flex flex-col">
