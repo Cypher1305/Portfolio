@@ -333,7 +333,6 @@ export default {
             "Bienvenue sur mon portfolio",
             "Chaque détail compte!",
             "Des projets inspirés.",
-            "Allons au-delà de vos attentes",
             "Votre vision, mon expertise.",
             "Donnez vie à vos projets!"
         ];
