@@ -152,7 +152,7 @@
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter gap-6">
                         <div class="project-thumbnail w-32 h-32 mb-4 mt-5">
-                            <img src="/bugster.png" alt="Miniature du projet"
+                            <img src="/b.png" alt="Miniature du projet"
                                 class="object-fit w-full h-full rounded-lg">
                         </div>
                         <div class="experience-details ml-6 flex flex-col">
@@ -167,10 +167,6 @@
                                         class="fab fa-react"></i></a>
                                 <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
                                     class="tech-icon"><i class="fab fa-js"></i></a>
-                                <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
-                                        class="fab fa-java"></i></a>
-                                <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
-                                        class="fab fa-sass"></i></a>
                             </div>
                             <div class="project-links flex gap-4">
                                 <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
@@ -181,7 +177,7 @@
 
                     <!-- Projet 1 -->
                     <div class="experience-item flex flex-row mt-5 text-custom-green font-inter">
-                        <div class="project-thumbnail w-32 h-32 mb-4 mt-4 ">
+                        <div class="project-thumbnail w-32 h-32 mb-4 mt-5 ">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
                         <div class="experience-details ml-6 flex flex-col">
