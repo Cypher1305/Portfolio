@@ -202,8 +202,6 @@
                             <div class="project-links flex gap-4">
                                 <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
                                     Visiter</a>
-                                <a href="https://github.com/Cypher1305" target="_blank" class="submit-btn">Code
-                                    source</a>
                             </div>
                         </div>
                     </div>
