@@ -331,11 +331,11 @@ export default {
         const typingText = ref(null);
         const texts = [
             "Bienvenue sur mon portfolio",
-            "Chaque détail compte.",
+            "Chaque détail compte!",
             "Des projets inspirés.",
             "Allons au-delà de vos attentes",
             "Votre vision, mon expertise.",
-            "Donner vie à vos projets!"
+            "Donnez vie à vos projets!"
         ];
 
         const showPopup = ref(false);
