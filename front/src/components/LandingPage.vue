@@ -214,7 +214,7 @@
                         mes projets</div>
                 </div>
 
-                <div id="projets" class="mt-12">
+                <div id="skills" class="mt-12">
                     <h2 class="text-2xl mb-4">COMPÉTENCES</h2>
                     <div class="mb-4">
                         <div>
