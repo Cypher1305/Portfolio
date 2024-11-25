@@ -154,7 +154,7 @@
                         <div class="project-thumbnail w-[150px] h-[150px] mb-4 mt-4">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
-                        <div class="experience-details ml-2 flex flex-col">
+                        <div class="experience-details flex flex-col">
                             <h1 class="text-lg font-semibold">Pain de Vie · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
                                 Application mobile pour le partage quotidien de Versets Bibliques.
@@ -183,7 +183,7 @@
                         <div class="project-thumbnail w-[150px] h-[150px] mb-4 mt-5 ">
                             <img src="/b.png" alt="Miniature du projet" class="object-cover w-auto h-auto rounded-lg">
                         </div>
-                        <div class="experience-details ml-6 flex flex-col">
+                        <div class="experience-details flex flex-col">
                             <h1 class="text-lg font-semibold">BUGSTER · Projet personnel</h1>
                             <p class="text-base text-gray text-justify">
                                 Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
