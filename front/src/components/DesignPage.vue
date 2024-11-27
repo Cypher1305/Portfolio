@@ -38,7 +38,7 @@
                         </video>
 
                     </div>
-                    <h2 class="text-sm font-semibold text-custom-green">Animation de logo · DIGILINK</h2>
+                    <h2 class="text-sm font-semibold text-custom-green">Animation de logo DIGILINK · Graphiste chez KY'S CONSULTING</h2>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="/digilink.mp4" target="_blank" class="submit-btn">➤ Voir</a>
                     </div>
@@ -49,7 +49,7 @@
                         <img src="/logo pfe.png" alt="Miniature du projet"
                             class="object-fit w-auto h-full mx-auto rounded-lg ">
                     </div>
-                    <h2 class="text-sm font-semibold text-custom-green">Logo · DIGILINK</h2>
+                    <h2 class="text-sm font-semibold text-custom-green">Logo DIGILINK· Graphiste chez KY'S CONSULTING</h2>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="/logo pfe.png" target="_blank" class="submit-btn">➤ Voir</a>
                     </div>
