@@ -21,6 +21,17 @@
 
                 <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4">
+                        <img src="/observaterra.gif" alt="Miniature du projet"
+                            class="object-fit w-auto h-full mx-auto rounded-lg ">
+                    </div>
+                    <h2 class="text-sm font-semibold text-custom-green">Logo et animation ObservaTerra (L'Observatoire des Dynamiques Foncières, Agraires et Forestières de Côte d'Ivoire)· Freelance</h2>
+                    <div class="project-links mt-4 flex gap-4">
+                        <a href="/observaterra.gif" target="_blank" class="submit-btn">➤ Voir</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4">
                         <video src="/digilink.mp4" controls autoplay loop muted
                             class="object-fit w-auto h-full mx-auto rounded-lg">
                             Votre navigateur ne supporte pas la vidéo.
