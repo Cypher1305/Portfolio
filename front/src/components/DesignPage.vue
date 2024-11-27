@@ -10,17 +10,6 @@
                 <!-- Carte de projet -->
                 <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4">
-                        <img src="/b.png" alt="Miniature du projet"
-                            class="object-fit w-auto h-full mx-auto rounded-lg ">
-                    </div>
-                    <h2 class="text-sm font-semibold text-custom-green">Mon logo · Projet personnel</h2>
-                    <div class="project-links mt-4 flex gap-4">
-                        <a href="/b.png" target="_blank" class="submit-btn">➤ Voir</a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
-                    <div class="project-thumbnail w-full h-32 mb-4">
                         <img src="/observaterra.gif" alt="Miniature du projet"
                             class="object-fit w-auto h-full mx-auto rounded-lg ">
                     </div>
@@ -82,9 +71,20 @@
                         <img src="/logo Jerems.jpg" alt="Miniature du projet"
                             class="object-fit w-auto h-full mx-auto rounded-lg ">
                     </div>
-                    <h2 class="text-sm font-semibold text-custom-green">Logo Bugster · Projet personnel</h2>
+                    <h2 class="text-sm font-semibold text-custom-green">Logo Jerem's · Projet personnel</h2>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="/logo Jerems.jpg" target="_blank" class="submit-btn">➤ Voir</a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 p-4 rounded-lg flex flex-col items-center text-center">
+                    <div class="project-thumbnail w-full h-32 mb-4">
+                        <img src="/b.png" alt="Miniature du projet"
+                            class="object-fit w-auto h-full mx-auto rounded-lg ">
+                    </div>
+                    <h2 class="text-sm font-semibold text-custom-green">Mon logo · Projet personnel</h2>
+                    <div class="project-links mt-4 flex gap-4">
+                        <a href="/b.png" target="_blank" class="submit-btn">➤ Voir</a>
                     </div>
                 </div>
 
