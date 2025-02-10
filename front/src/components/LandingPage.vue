@@ -141,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/CV_YAO_Kossia_Benedicte.pdf" target="_blank"
+                    <a href="/CV__YAO_Kossia_Benedicte.pdf" target="_blank"
                         class="mt-5 ml-2 text-lg font-semibold text-gray hover:text-custom-green hover:underline transition-colors duration-100 ease-in-out">➤
                         Voir mon CV complet</a>
                 </div>
