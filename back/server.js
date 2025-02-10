@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
-    origin: 'https://cypher1305.onrender.com', // Spécifiez l'origine autorisée
+    origin: 'https://benedicteyao.me', // Spécifiez l'origine autorisée
     methods: ['GET', 'POST', 'OPTIONS'],
 }));
 
