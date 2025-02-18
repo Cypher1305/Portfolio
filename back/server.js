@@ -16,8 +16,8 @@ app.use(cors({
 // Configurer Nodemailer avec un transporteur SMTP
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587, // Utilisez 465 pour une connexion sécurisée SSL, sinon laissez 587
-    secure: false, // Utilisez `true` pour SSL/TLS si vous changez le port en 465
+    port: 465, // Utilisez 587 pour une connexion sécurisée SSL, sinon laissez 587
+    secure: true, // Utilisez `true` pour SSL/TLS si vous changez le port en 465 sinon 'false'
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
