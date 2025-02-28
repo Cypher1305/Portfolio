@@ -140,7 +140,7 @@ const props = defineProps({
         0px 0px 10px 2px rgba(0, 255, 135, 0.3);
     -webkit-animation: fly 2s linear infinite;
     animation-delay: var(--delay);
-    -moz-animation: fly 3s linear infinite;
+    -moz-animation: fly 4s linear infinite;
 }
 
 @keyframes fly {
