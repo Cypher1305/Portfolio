@@ -43,15 +43,15 @@ onMounted(() => {
                         Le site MyPhotoCard propose un service d'impression de photos en format Polaroid. 
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
-                        <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
-                                class="fab fa-html"></i></a>
-                        <a href="https://react.dev" target="_blank" class="tech-icon"><i class="fab fa-react"></i></a>
-                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
-                            class="tech-icon"><i class="fab fa-js"></i></a>
-                        <a href="https://docs.oracle.com/en/java" target="_blank" class="tech-icon"><i
-                                class="fab fa-css"></i></a>
-                        <a href="https://sass-lang.com" target="_blank" class="tech-icon"><i
-                                class="fab fa-firebase"></i></a>
+                       <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="tech-icon">
+                            <i class="fab fa-html5"></i></a>
+                      <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="tech-icon">
+                            <i class="fab fa-css3-alt"></i></a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="tech-icon">
+                            <i class="fab fa-js"></i></a>
+                        <a href="https://firebase.google.com/docs" target="_blank" class="tech-icon">
+                            <i class="fas fa-fire"></i> <!-- Firebase n'a pas d'icône officielle dans FontAwesome --></a>
+
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="https://cypher1305.github.io/" target="_blank" class="submit-btn">➤ Visiter</a>
