@@ -55,8 +55,6 @@ onMounted(() => {
                     </div>
                     <div class="project-links mt-4 flex gap-4">
                         <a href="https://cypher1305.github.io/" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305/MyPhotoCard" target="_blank" class="submit-btn">Code
-                            source</a>
                     </div>
                 </div>
 
