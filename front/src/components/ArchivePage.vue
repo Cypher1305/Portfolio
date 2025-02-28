@@ -40,8 +40,7 @@ onMounted(() => {
                     </div>
                     <h2 class="text-lg font-semibold text-custom-green">MyPhotoCard · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Le site MyPhotoCard propose un service d'impression de souvenirs en format Polaroid. 
-                        Il met en avant la personnalisation de photos pour immortaliser des moments spéciaux.
+                        Le site MyPhotoCard propose un service d'impression de photos en format Polaroid. 
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
