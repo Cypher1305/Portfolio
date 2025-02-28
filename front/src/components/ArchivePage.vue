@@ -18,7 +18,7 @@ const navigateTo = (route) => {
 onMounted(() => {
     setTimeout(() => {
         isLoading.value = false;
-    }, 5000); // Simule le chargement pendant 2 secondes
+    }, 2000); // Simule le chargement pendant 2 secondes
 });
 </script>
 
