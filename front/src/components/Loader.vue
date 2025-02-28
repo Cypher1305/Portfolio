@@ -71,7 +71,7 @@ const props = defineProps({
     height: 100%;
     background: transparent;
     transform-origin: top left;
-    animation: radar81 1s linear infinite;
+    animation: radar81 2s linear infinite;
     border-top: 1px dashed #fff;
 }
 
@@ -125,7 +125,7 @@ const props = defineProps({
     --dot-start-left: 85px;
     --dot-end-top: 125px;
     --dot-end-left: 120px;
-    --delay: 1s;
+    --delay: 2s;
 }
 
 .dot {
@@ -140,7 +140,7 @@ const props = defineProps({
         0px 0px 10px 2px rgba(0, 255, 135, 0.3);
     -webkit-animation: fly 2s linear infinite;
     animation-delay: var(--delay);
-    -moz-animation: fly 2s linear infinite;
+    -moz-animation: fly 3s linear infinite;
 }
 
 @keyframes fly {
