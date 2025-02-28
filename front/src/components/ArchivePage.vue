@@ -92,7 +92,7 @@ onMounted(() => {
                     </div>
                     <h2 class="text-lg font-semibold text-custom-green">Portfolio v1 · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Mon premier portfolio (en ligne).
+                        Mon portfolio (benedicteyao.me).
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -106,7 +106,7 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤
+                        <a href="https://www.benedicteyao.me/" target="_blank" class="submit-btn">➤
                             Visiter</a>
                         <a href="https://github.com/Cypher1305/Portfolio" target="_blank" class="submit-btn">Code
                             source</a>
