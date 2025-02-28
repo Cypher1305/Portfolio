@@ -35,13 +35,13 @@ onMounted(() => {
                 <div
                     class="project-card bg-gray-900 p-4 rounded-lg flex flex-col justify-center items-center text-center">
                     <div class="project-thumbnail w-full h-32 mb-4 bg-gray-900">
-                        <img src="/bugster.png" alt="Miniature du projet"
+                        <img src="/mpc.jpeg" alt="Miniature du projet"
                             class="object-fit w-auto h-full rounded-lg mx-auto">
                     </div>
-                    <h2 class="text-lg font-semibold text-custom-green">BUGSTER · Projet personnel</h2>
+                    <h2 class="text-lg font-semibold text-custom-green">MyPhotoCard · Projet personnel</h2>
                     <p class="text-sm text-gray mt-2">
-                        Application mobile d'apprentissage par projets, jeux et challenges, en programmation et
-                        algorithmes.
+                        Le site MyPhotoCard propose un service d'impression de souvenirs en format Polaroid. 
+                        Il met en avant la personnalisation de photos pour immortaliser des moments spéciaux.
                     </p>
                     <div class="stack mt-3 flex flex-wrap justify-center gap-3">
                         <a href="https://nodejs.org/en/docs" target="_blank" class="tech-icon"><i
@@ -55,8 +55,8 @@ onMounted(() => {
                                 class="fab fa-sass"></i></a>
                     </div>
                     <div class="project-links mt-4 flex gap-4">
-                        <a href="#" @click.prevent="showPopup = true" target="_blank" class="submit-btn">➤ Visiter</a>
-                        <a href="https://github.com/Cypher1305/Bugster" target="_blank" class="submit-btn">Code
+                        <a href="https://cypher1305.github.io/" target="_blank" class="submit-btn">➤ Visiter</a>
+                        <a href="https://github.com/Cypher1305/MyPhotoCard" target="_blank" class="submit-btn">Code
                             source</a>
                     </div>
                 </div>
